@@ -1,7 +1,7 @@
 # Welcome
 I made a replica design of a Craftwork design. Bumped into it on Behance, I guess.
 ## Original
-![](/designs/original-design)
+![image](/designs/original-design)
 ## Replica(Desktop)
 ![](/designs/replica-design)
 ## Replica(Mobile)
