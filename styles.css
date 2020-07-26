@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*
+========
+GENERAL
+========
+*/
+:root {
+    --color1: #48FFC8;
+    --color2: #A282FD;
+    --color3: #000000;
+    --color4: #EFF2F6;
+    --color5: #C9CEE7;
+    --color6: #FFFFFF;
+    --color7: #C4C4C4;
+    
+    --mobile-padding: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color3);
+    display: inline-block;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+}
+body > *:nth-child(odd) {
+    min-height: calc(100vh - 110px);
+}
+/*
+=================
+HIDDEN ELEMENTS
+=================
+*/
+.desktop-navbar-container, .hide,
+.sub-heading,
+.search-input,
+.logo-link__desktop {
+    display: none;
+}
+/*
+===============
+FLEX CONTAINER
+===============
+*/
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+/*    border: 2px solid red;*/
+}
+
+.flex-container > * {
+/*    border: 2px solid red;*/
+    flex: 1 1 600px;
+}
+/*
+=========================
+LEFT SECTION ELEMENTS
+=========================
+*/
+/* MOBILE NAVIGATION */
+.mobile-navbar-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem var(--mobile-padding);
+    background: var(--color6);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo-link__mobile {
+    margin-right: auto;
+}
+
+.hamburger-icon {
+    margin-left: 2.1875rem;
+    cursor: pointer;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+/* MAIN CONTAINER */
+.main-heading {
+    padding: 0 var(--mobile-padding);
+    font-size: 2.8rem;
+    color: var(--color3);
+    margin-top: 2.5rem;
+}
+
+.form {
+    padding: 0 var(--mobile-padding);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.email-input {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 350px;
+    background-color: var(--color4);
+    color: var(--color3);
+    margin: 1.125rem 0;
+    padding: 1rem;
+/*    border: 2px solid red;*/
+}
+
+.email-input::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--color5);
+}
+
+.get-started-btn {
+    flex: 0 0 150px;
+    padding: 1rem;
+    background-color: var(--color3);
+    color: var(--color6);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.arrow-image {
+    margin-left: 0.3125rem;
+}
+
+.terms-and-conditions {
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    color: var(--color7);
+    margin-top: 1.125rem;
+}
+/*
+=========================
+NAVIGATION LINKS
+=========================
+*/
+.nav-bar-list__mobile {
+    flex-basis: 100%;
+}
+.nav-links__mobile {
+    margin-top: 8px;
+    padding: 16px;
+/*    border: 2px solid red;*/
+}
+
+.nav-links__mobile:first-child {
+    margin-top: 24px;
+}
+/*
+=========================
+RIGHT SECTION ELEMENTS
+=========================
+*/
+.flex-right {
+    display: flex;
+    flex-flow: row wrap;
+/*    text-align: center;*/
+}
+
+.flex-right > * {
+/*    border: 2px solid blue;*/
+}
+
+.illustration-image-container {
+    display: grid;
+    flex: 1 1 100%;
+}
+
+.illustration-image {
+    margin: 2.5rem auto;
+    width: 250px;
+}
+
+.flex-right > div:last-child {
+    flex: 1 1 50%; /*as a flex item*/
+
+    display: flex; /*as a flex container*/
+    flex-direction: column;
+/*    flex-flow: row wrap;*/
+}
+
+.commission {
+    flex: 1 1 50%; /*as a flex item*/
+
+    display: flex; /*as a flex container*/
+    flex-direction: column;
+/*    flex-flow: row wrap;*/
+
+    font-size: 1rem;
+    padding: 0 var(--mobile-padding);
+}
+
+.zero-percent {
+    font-size: 4.5rem;
+    margin-right: 0.5rem;
+}
+
+.their-bank {
+    font-weight: bold;
+    padding: 0 var(--mobile-padding);
+    color: var(--color7);
+}
+
+.watch-video {
+    margin: 0.5rem var(--mobile-padding);
+    width: 50%;
+    padding: 0.3125rem;
+    background-color: var(--color6);
+    border: 1px solid var(--color4);
+    border-radius: 3.125rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 10rem;
+    position: relative;
+}
+
+.watch-video:hover {
+    background-color: var(--color3);
+    color: var(--color6);
+}
+
+.how-it-works {
+    position: absolute;
+    font-size: 0.75rem;
+    top: 0.625rem;
+    left: 2.8125rem;
+}
+
+.play-icon {
+    border-radius: 50%;
+    background-color: var(--color3);
+    padding: 0.625rem;
+}
+/*
+=========
+FOOTER
+=========
+*/
+.footer {
+    padding: 1.125rem 0;
+    text-align: center;
+    background-color: var(--color6) ;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 1.5rem;
+}
+
+.copyright:first-child {
+    margin-bottom: 0.5rem;
+}
+/*
+============
+MEDIA QUERY
+=============
+*/
+@media (min-width: 700px) {
+/*
+    .desktop-navbar-container, .hide,
+    .sub-heading {
+        display: none;
+    }
+*/
+    :root {
+        --mobile-padding: 0;
+    }
+    .flex-container {
+        padding: 0 1rem;
+    }
+    .mobile-navbar-container, .search-input {
+        display: none;
+    }
+    .desktop-navbar-container,
+    .logo-link__desktop,
+    .sub-heading {
+        display: block;
+/*        border: 2px solid blue;*/
+    }
+    .nav-bar-list__desktop {
+        display: flex;
+        flex: 1 1 100%;
+        margin: 2.1875rem 0 6.25rem;
+    }
+    .nav-links__desktop > a, .search-icon__desktop {
+        padding: 0.3rem;
+        margin-left: 0.5rem;
+    }
+    .nav-bar-list__desktop > li:last-child{
+        margin-left: auto;
+    }
+    .nav-links__desktop:first-child > a {
+        margin-left: 0;
+    }
+    .logo-image__desktop {
+        border: 1px solid var(--color4);
+        border-radius: 10px;
+        padding: 0.35rem;
+    }
+    .logo-link__desktop {
+        margin-bottom: 5rem;
+    }
+    .sub-heading {
+        font-size: 0.8rem;
+    }
+    .email-input {
+        margin-right: 0.5rem;
+    }
+    .flex-container > * {
+        padding: 0 50px;
+    }
+    .flex-left {
+        border-right: 2px solid var(--color4);
+    }
+    .terms-and-conditions {
+        margin-top: 0;
+    }
+    .flex-right {
+/*        border: 2px solid red;*/
+    }
+    .zero-percent {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .their-bank {
+        order: 2;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
